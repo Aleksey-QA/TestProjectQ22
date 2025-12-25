@@ -16,7 +16,6 @@ try:
         print(f"Индекс массы тела = {bmi:.2f}: Избыточная масса тела (предожирение)")
     else:
         print(f"Индекс массы тела = {bmi:.2f}: Ожирение")
-
     print()
 except ValueError as ve:
     print(f"Ошибка ввода: {ve}")
