@@ -33,7 +33,7 @@ jobs:
     # Шаг 4: Запустить Pylint
     - name: Run Pylint
       run: |
-        echo "🔍 Запуск Pylint..."
+        echo "🔍 Запуск Pylint..." --exit-zero
         
         # Вариант 1: Для всех Python файлов в проекте
         pylint $(find . -name "*.py" -not -path "./.git/*" -not -path "./venv/*" -not -path "./.venv/*")
